@@ -1,0 +1,192 @@
+[
+    {
+        "firstname": "John",
+        "lastname": "Doe",
+        "phone": "631-335-9117",
+        "email": "josephw@gmail.com",
+        "address": "5 Westport Rd.Madison, AL 35758",
+        "IsOnHolidays": false,
+        "IsSummer": true,
+        "date":
+        {
+            "arrival": "2022-04-01",
+            "departure": "2022-04-12"
+        },
+        "hotel": {
+            "name": "Mellow Summit Hotel",
+            "address": "743 W. Pennington Ave. Faribault, MN 55021"
+        },
+        "bookingNumber": "652001"
+    },
+    {
+        "firstname": "Savannah",
+        "lastname": "Vaughan",
+        "phone": "815-362-6622",
+        "email": "meinkej@sbcglobal.net",
+        "address": "546 Sleepy Hollow Ave. Pataskala, OH 43062",
+        "IsOnHolidays": true,
+        "IsSummer": false,
+        "date":
+        {
+            "arrival": "2022-04-11",
+            "departure": "2022-05-02"
+        },
+        "hotel": {
+            "name": "Ivory Universe Hotel",
+            "address": "743 W. Pennington Ave. Faribault, MN 55021"
+        },
+        "bookingNumber": "822078"
+    },
+    {
+        "firstname": "Leroy",
+        "lastname": "Page",
+        "phone": "940-603-3530",
+        "email": "mallanmba@gmail.com",
+        "address": "422 Taylor St. Cranston, RI 02920",
+        "IsOnHolidays": true,
+        "IsSummer": true,
+        "date":
+        {
+            "arrival": "2022-04-01",
+            "departure": "2022-05-06"
+        },
+        "hotel": {
+            "name": "Noble Jewel Resort",
+            "address": "7256 Stonybrook St. New Rochelle, NY 10801"
+        },
+        "bookingNumber": "450617"
+    },
+    {
+        "firstname": "Catherine",
+        "lastname": "Ellis",
+        "phone": "971-888-0644",
+        "email": "gemmell@hotmail.com",
+        "address": "82 Rockwell Drive Voorhees, NJ 08043",
+        "IsOnHolidays": true,
+        "IsSummer": false,
+        "date":
+        {
+            "arrival": "2022-04-01",
+            "departure": "2022-05-11"
+        },
+        "hotel": {
+            "name": "Crimson Palms Motel",
+            "address": "178 Laurel Court Peachtree City, GA 30269"
+        },
+        "bookingNumber": "883810"
+    },
+    {
+        "firstname": "Jakayla",
+        "lastname": "Mcgee",
+        "phone": "972-523-0413",
+        "email": "rasca@att.net",
+        "address": "9138 Essex Ave. Providence, RI 02904",
+        "IsOnHolidays": true,
+        "IsSummer": true,
+        "date":
+        {
+            "arrival": "2022-04-11",
+            "departure": "2022-05-01"
+        },
+        "hotel": {
+            "name": "Oriental Flower Hotel",
+            "address": "493 South Manhattan Drive Meriden, CT 06450"
+        },
+        "bookingNumber": "899332"
+    },
+    {
+        "firstname": "Andres",
+        "lastname": "Martin",
+        "phone": "816-737-3306",
+        "email": "airship@optonline.net",
+        "address": "779 Pin Oak Lane Teaneck, NJ 07666",
+        "IsOnHolidays": true,
+        "IsSummer": false,
+        "date":
+        {
+            "arrival": "2022-04-01",
+            "departure": "2022-05-01"
+        },
+        "hotel": {
+            "name": "Oriental Flower Hotel",
+            "address": "9455 Pin Oak Street West Des Moines, IA 50265"
+        },
+        "bookingNumber": "196472"
+    },
+    {
+        "firstname": "Michaela",
+        "lastname": "Odom",
+        "phone": "413-443-4531",
+        "email": "alastair@gmail.com",
+        "address": "239 Cleveland Street Franklin Square, NY 11010",
+        "IsOnHolidays": false,
+        "IsSummer": true,
+        "date":
+        {
+            "arrival": "2022-05-01",
+            "departure": "2022-5-20"
+        },
+        "hotel": {
+            "name": "Emerald Mountain Hotel",
+            "address": "27 Indian Summer St.Palmetto, FL 34221"
+        },
+        "bookingNumber": "148422"
+    },
+    {
+        "firstname": "Cynthia",
+        "lastname": "Mason",
+        "phone": "612-724-8633",
+        "email": "gtewari@msn.com",
+        "address": "734 Pleasant Road Asheville, NC 28803",
+        "IsOnHolidays": false,
+        "IsSummer": false,
+        "date":
+        {
+            "arrival": "2022-05-03",
+            "departure": "2022-05-22"
+        },
+        "hotel": {
+            "name": "Emerald Mountain Hotel",
+            "address": "aa"
+        },
+        "bookingNumber": "865185"
+    },
+    {
+        "firstname": "Emerson",
+        "lastname": "Yoder",
+        "phone": "262-354-2994",
+        "email": "godeke@sbcglobal.net",
+        "address": "8355 Wilson Dr. Fuquay Varina, NC 27526",
+        "IsOnHolidays": false,
+        "IsSummer": true,
+        "date":
+        {
+            "arrival": "2022-03-11",
+            "departure": "2022-04-02"
+        },
+        "hotel": {
+            "name": "Emerald Mountain Hotel",
+            "address": "863 Ohio Drive Hagerstown, MD 21740"
+        },
+        "bookingNumber": "943673"
+    },
+    {
+        "firstname": "Paige",
+        "lastname": "Terrell",
+        "phone": "618-499-4373",
+        "email": "openldap@yahoo.ca",
+        "address": "713 South Holly Drive Fitchburg, MA 01420",
+        "IsOnHolidays": true,
+        "IsSummer": false,
+        "date":
+        {
+            "arrival": "2022-04-14",
+            "departure": "2022-04-29"
+        },
+        "hotel": {
+            "name": "Eastern Meadows Hotel",
+            "address": "702 Hall Drive Waxhaw, NC 28173"
+        },
+        "bookingNumber": "845893"
+    }
+]
