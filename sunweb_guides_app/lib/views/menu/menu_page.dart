@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sunweb_guides_app/views/customer/customer_list_page.dart';
+import 'package:sunweb_guides_app/views/guide/guide_page.dart';
+import 'package:sunweb_guides_app/views/login/login_page.dart';
 
 import '../../app_bar.dart';
 import '../../models/menu_item_model.dart';
@@ -10,9 +12,18 @@ class MenuPage extends StatefulWidget  {
   State<StatefulWidget> createState() => new _State();
 }
 
-class _State extends State<MenuPage> {
+  class _State extends State<MenuPage> {
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+  void renderPage(MenuItem menuItem){
+    if (menuItem.path == 'CustomersListPage'){
+
+    }
+    else {
+
+    }
+  }
 
 
   @override
@@ -59,13 +70,28 @@ class _State extends State<MenuPage> {
                                 borderRadius: BorderRadius.circular(8.0)),
                             child: InkWell(
                             onTap: () {
-                Navigator.push(
+                
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    switch (menu[index].path) {
+                      case 'ProfilePage':
+                        return GuidePage();
+                 
+                      case 'CustomersListPage':
+                        return CustomerListPage();
+                    
+
+                      default:
+                        return LoginPage();
+                    }
+                  }));
+                /*Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) =>
-                        CustomerListPage(),
+                        GuidePage(),
                   ),
-                );
+                  
+                );*/
               },
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -100,7 +126,19 @@ class _State extends State<MenuPage> {
                         style: ElevatedButton.styleFrom(
                           primary: Color.fromRGBO(0, 119, 136, 1), // Background color
                       ),
-                        onPressed: (){},
+                        onPressed: (){
+                          
+                            Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        LoginPage(),
+                  ),
+                  
+                );
+
+
+                        },
                       ),
                       )
                       

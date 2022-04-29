@@ -1,11 +1,12 @@
 
 import 'package:flutter/material.dart';
 
+
 import '../../app_bar.dart';
 import '../../models/customer_model.dart';
 
 class CustomerPage extends StatelessWidget {
-  const CustomerPage({Key? key, required this.customer}) : super(key: key);
+   CustomerPage({Key? key, required this.customer}) : super(key: key);
   final Customer customer;
 
   @override
@@ -15,12 +16,14 @@ class CustomerPage extends StatelessWidget {
        appBar: BaseAppBar(
           title: Text('Customer'),
           appBar: AppBar()),
-      body: Container(
+      body: SingleChildScrollView(
+
+        child:  Container(
         color: Color.fromRGBO(0, 119, 136, 0.25),
         child: Column(     
           children: [        
             const SizedBox(
-              height: 60,
+              height: 15,
             ),
             Text(
               "${customer.firstname} ${customer.lastname}",
@@ -31,16 +34,17 @@ class CustomerPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 30,
+              height: 10,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 20,horizontal: 150),
+              padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
               child: Card(
-                margin: EdgeInsets.symmetric(horizontal: 20.0,vertical: 8.0),
+                margin: EdgeInsets.symmetric(horizontal: 20.0,vertical: 5),
                 elevation: 1.0,
                 child: Column(children: [
                   ListTile(
-                  leading: Icon(Icons.phone),
+                  leading:Icon(Icons.phone),
+
                   title: Text(customer.phone)  
                   ),
                   Divider(thickness: 1),
@@ -73,7 +77,7 @@ class CustomerPage extends StatelessWidget {
             ),
             ),
              const SizedBox(
-              height: 40,
+              height: 10,
             ),
             Text(
               customer.hotel,
@@ -84,24 +88,38 @@ class CustomerPage extends StatelessWidget {
               ),
             ),
              const SizedBox(
-              height: 20,
+              height: 10,
             ),
-            Text(
+            Padding(padding: EdgeInsets.symmetric(vertical: 0,horizontal: 20), child:     Text(
               customer.hotelAddress,
               style: const TextStyle(
                 fontSize: 15.0,
                 letterSpacing: 2.0,
                 fontWeight: FontWeight.w400
               ),
-            ),             
+            ), ),
+            
+                    
             const SizedBox(
-              height: 50,
+              height: 10,
             ),
-            const Image(image: AssetImage('assets/acco2.jpg')),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 0,horizontal: 20),
+              child:  const Image(image: AssetImage('assets/acco1.jpg')
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+           
           ],          
         ),
       )
-    )
+    ))
+         
+      
+      
+      
     );    
   }
 }

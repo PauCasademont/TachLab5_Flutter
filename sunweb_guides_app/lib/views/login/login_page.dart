@@ -26,16 +26,23 @@ class _State extends State<LoginPage> {
     return Scaffold(
          
         body: Container(
-           color: Color.fromRGBO(189, 158, 190, 1),child: Padding(
+            color: Color.fromRGBO(0, 119, 136, 0.25),
+            child: Padding(
             padding: EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image(image: AssetImage('assets/download.jpg')),
+                SizedBox(height: 20),
+                Image(
+                  image: AssetImage('assets/sunweb_logo2.png'),
+                  width: 180,
+                  height: 180,
+
+                ),
                 Container(
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
                     child: const Text(
-                      'Welcome to the Guide Toold',
+                      'Welcome to the Guide Tool',
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w500,
@@ -45,7 +52,7 @@ class _State extends State<LoginPage> {
                     Container(
                       padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'A Sunweb travel guides app to manage '
+                    'An internal Sunweb app for the guides'
                   ),
                 ),
                 Container(
