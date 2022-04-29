@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sunweb_guides_app/models/customer_model.dart';
+import 'package:sunweb_guides_app/views/customer/customer_page.dart';
 
 import '../../app_bar.dart';
 
@@ -49,7 +50,9 @@ class _State extends State<CustomerListPage> {
               itemCount: snapshot.data == null ? 0 : items.length,
                 itemBuilder: (BuildContext context, int index) {
                   return InkWell(
-                    onTap: () => (items[index].firstname),
+                    onTap: () => {      
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => CustomerPage(customer: items[index])))                      
+                    },
                     child: Column(
                       children: [
                        

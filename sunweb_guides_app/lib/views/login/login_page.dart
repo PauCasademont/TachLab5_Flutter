@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sunweb_guides_app/views/menu/menu_page.dart';
+import 'package:sunweb_guides_app/views/customer/customer_page.dart';
+
 
 import '../../app_bar.dart';
 

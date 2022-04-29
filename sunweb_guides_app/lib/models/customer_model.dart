@@ -1,4 +1,4 @@
-import 'dart:ffi';
+//import 'dart:ffi';
 
 class Customer {
   
@@ -9,6 +9,11 @@ class Customer {
   String address;
   bool IsOnHolidays;
   bool IsSummer;
+  String bookingNumber;
+  String hotel;
+  String hotelAddress;
+  String arrivalDate;
+  String departureDate;
   
 
   Customer(
@@ -20,7 +25,12 @@ class Customer {
         required this.email,
         required this.address,
         required this.IsOnHolidays,
-        required this.IsSummer
+        required this.IsSummer,
+        required this.bookingNumber,
+        required this.hotel,
+        required this.hotelAddress,
+        required this.arrivalDate,
+        required this.departureDate
      });
 
     factory Customer.fromJson(Map<String, dynamic> json) {
@@ -33,7 +43,12 @@ class Customer {
         address: json['address'],
         IsOnHolidays: json['IsOnHolidays'] as bool,
         IsSummer: json['IsSummer'] as bool  ,
-            
+        bookingNumber: json['bookingNumber'] as String,
+        hotel: json['hotel']['name'] as String,
+        hotelAddress: json['hotel']['address'] as String,
+        arrivalDate: json['date']['arrival'] as String,
+        departureDate: json['date']['departure'] as String
       );
   }
+
 }
